@@ -1,1 +1,237 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+
+<title>Suraksha Kavach Guest House | Rooms from ₹399</title>
+
+<meta name="description" content="Suraksha Kavach Guest House Baghpat Nayagaon. PG Room, Couple Room, Luxury Room available. Rooms starting from ₹399. Near Shiv Mandir and Kali Mandir.">
+
+<meta name="keywords" content="Guest House Baghpat, PG Room Baghpat, Couple Room Baghpat, Hotel Baghpat">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:black;
+color:gold;
+text-align:center;
+}
+
+header{
+background:#111;
+padding:20px;
+font-size:28px;
+font-weight:bold;
+}
+
+.slider img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.section{
+padding:20px;
+}
+
+.gallery img{
+width:90%;
+max-width:350px;
+margin:10px;
+border-radius:10px;
+}
+
+.box{
+background:#111;
+width:320px;
+margin:auto;
+padding:20px;
+border-radius:10px;
+}
+
+input,select{
+width:90%;
+padding:8px;
+margin:6px;
+border-radius:5px;
+border:none;
+}
+
+button{
+background:gold;
+color:black;
+padding:10px 20px;
+border:none;
+border-radius:5px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+}
+
+.call{
+background:red;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+}
+
+.review{
+background:#111;
+margin:10px;
+padding:10px;
+border-radius:10px;
+}
+
+</style>
+
+<script>
+
+function sendBooking(){
+
+var name=document.getElementById("name").value;
+var phone=document.getElementById("phone").value;
+var checkin=document.getElementById("checkin").value;
+var checkout=document.getElementById("checkout").value;
+var room=document.getElementById("room").value;
+
+var message="Room Booking Request:%0AName: "+name+
+"%0APhone: "+phone+
+"%0ACheck-in: "+checkin+
+"%0ACheck-out: "+checkout+
+"%0ARoom Type: "+room;
+
+window.open("https://wa.me/919837287413?text="+message);
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+Suraksha Kavach Guest House
+</header>
+
+<div class="slider">
+
+<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+
+<img src="https://images.unsplash.com/photo-1590490360182-c33d57733427">
+
+</div>
+
+<div class="section">
+
+<h2>Rooms Starting From ₹399</h2>
+
+<p>✔ PG Room Available</p>
+<p>✔ Couple Room Available</p>
+<p>✔ Luxury Room Available</p>
+<p>✔ Free Cab Available</p>
+
+</div>
+
+<div class="box">
+
+<h3>Room Booking</h3>
+
+<input id="name" type="text" placeholder="Your Name"><br>
+
+<input id="phone" type="tel" placeholder="Mobile Number"><br>
+
+<label>Check In Date</label><br>
+<input id="checkin" type="date"><br>
+
+<label>Check Out Date</label><br>
+<input id="checkout" type="date"><br>
+
+<label>Select Room</label><br>
+
+<select id="room">
+<option>PG Room</option>
+<option>Couple Room</option>
+<option>Luxury Room</option>
+</select><br><br>
+
+<button onclick="sendBooking()">Book on WhatsApp</button>
+
+</div>
+
+<br>
+
+<a class="call" href="tel:9837287413">Call Now</a>
+
+<div class="section">
+
+<h3>Room Gallery</h3>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+
+<img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39">
+
+<img src="https://images.unsplash.com/photo-1560185893-a55cbc8c57e8">
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h3>UPI Payment</h3>
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=skguesthouse@upi&pn=Suraksha%20Kavach%20Guest%20House">
+
+<p>UPI ID: skguesthouse@upi</p>
+
+</div>
+
+<div class="section">
+
+<h3>Customer Reviews</h3>
+
+<div class="review">
+⭐ ⭐ ⭐ ⭐ ⭐ <br>
+Very clean room and good service.
+</div>
+
+<div class="review">
+⭐ ⭐ ⭐ ⭐ ⭐ <br>
+Affordable rooms and good location.
+</div>
+
+</div>
+
+<div class="section">
+
+<h3>Location</h3>
+
+<iframe
+src="https://maps.google.com/maps?q=baghpat%20nayagaon&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="90%"
+height="250"
+style="border:0;">
+</iframe>
+
+<p>📍 Baghpat Nayagaon (Hamidabad) NH334B<br>
+Near Shiv Mandir & Kali Mandir</p>
+
+<p>📞 Phone: 9837287413</p>
+
+</div>
+
+</body>
+</html>
